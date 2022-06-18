@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+}
+
+a {
+    padding: px 0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+h2 {
+    margin-bottom: 32px;
+    padding-left: 8px;
+    border-left: 4px solid #f13239;
+}
+
+.text-center {
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dark {
+    background-color: #111111;
+    color: #ebebeb;
+}
+
+.dark-link {
+    color:#f13239;
+    border-bottom: 1px solid;
+}
+
+.dark-link:hover,
+.dark-link:focus {
+    color:#ebebeb
+
+}
+
+header {
+    padding: 8px 24px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 8px;
+    column-gap: 24px;
+
+}
+
+header img {
+
+    width: 120px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li + li {
+    margin-left: 10px;
+}
+
+header a {
+    color: #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+header a:hover,
+header a:focus {
+    color: #f13239;
+    border-bottom: 1px solid #f13239;
+}
+
+.hero {
+    background-image: url(/images/banner.jpg);
+    background-size: cover;
+    background-position: center 25%;
+    
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero h1 {
+    background-color: #111111;
+    color: #ebebeb;
+    font-size: 36px;
+    
+}
+
+.dots {
+    
+    display: flex;
+    margin-top: 10px;
+}
+
+.dots button {
+    background-color:#ebebeb;
+
+    width: 8px;
+    height: 8px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.dots button + button {
+margin-left: 10px;
+}
+
+.dots .active {
+    background-color: #f13239;
+}
+
+.gallery {
+    padding: 64px 24px 96px;
+}
+
+.gallery h2 {
+
+}
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    
+}
+.gallery-row figure {
+    flex: 1 1 250px;
+}
+
+.gallery-row figure img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+
+.gallery figure figcaption {
+    font-weight: bold;
+}
+
+.history {
+
+    padding: 92px 24px 0;
+    color: #ebebeb;
+    border-top: 4px solid #f13239;
+}
+
+.history .container {
+ 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #f13239;
+    gap: 24px;
+}
+
+.history .container .col {
+    flex: 1 1 350px;
+}
+
+.history .container .col img {
+    display: block;
+    width: 100%;
+    
+}
+
+.history p {
+    line-height: 1.5;
+}
+
+.history p + p {
+    margin-top: 20px;
+    
+}
+
+footer {
+    padding: 64px 24px;
+}
+
+
